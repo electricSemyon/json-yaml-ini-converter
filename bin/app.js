@@ -18,9 +18,8 @@ function convertDir (fromDir, toDir, format) {
 
   for(let i in filesToConvert){
     if(fileManager.isFile(fromDir + '/' + filesToConvert[i])){
-      console.log(folder + '/' + filesToConvert[i].split('.')[0] + '.' + format);
       convert(
-        fromDir + '/' + filesToConvert[i], folder + '/' + filesToConvert[i].split('.')[0] + '.' + format);//HERE!!!!!!!!!!!!!!!!!!!!!
+        fromDir + '/' + filesToConvert[i], folder + '/' + filesToConvert[i].split('.')[0] + '.' + format);
       }
     }
 }
